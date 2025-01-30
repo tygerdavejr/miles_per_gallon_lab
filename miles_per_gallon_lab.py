@@ -1,17 +1,18 @@
-'''
-    script: targetHeartRate_Vance.py
-    action: a. Calculates target heart rates based off age
-            b. Display results
+"""
+    script: miles_per_gallon_lab.py
+    action: a. Determines miles-per-gallon from input
+            b. Prints a cumulative MPG when user desires to quit.
+            c. SENTINEL check on gallons_used only
     author: David Vance
-    date: 22 January 2025
-'''
+    date: 29 January 2025
+"""
 
 #global variables
-SENTINEL = -99
+SENTINEL = -1
 
 
-def inputAge():
-    '''
+def input_age():
+    """
     Prompt user for age, then checks for the following conditions:
     - If the age is not an integer, capture the error, print an error
       message and prompt the user for another value
@@ -26,7 +27,7 @@ def inputAge():
     input:  age
     output: entry prompt, error message (if needed)
     return: age
-    '''
+    """
     # local variables
     age = ''
 
@@ -52,44 +53,36 @@ def inputAge():
     return age
 
 
-def determineTargetHeartRates(age):
-    '''
-    Calculate maximum target heart rate from age, then determine the low target heart 
-    rate (50%) and the high target heart rate (85%).  
+def function():
+    """
+    Description.  
 
-    action: calculate maximum, low target and high target heart rates
-    input:  age
-    output: none
-    return: lowTargetHeartRate, highTargetHeartRate
-    '''
-    # Calculate the maximum heart rate first (220 - age), then calculate the 
-    # low target heart rate (50%) and high target heart rate (85%) from the
-    # maximum heart rate.
-    maximumTargetHeartRate = 220 - age
-    lowTargetHeartRate = maximumTargetHeartRate * .5     # 50%
-    highTargetHeartRate = maximumTargetHeartRate * .85   # 85%
+    action: 
+    input:  
+    output: 
+    return: 
+    """
+    # Logic notes
+    
 
-    return lowTargetHeartRate, highTargetHeartRate
+
+    return 
 
 
 # MAIN PROCESSING
 # Call to main() function, intitiate processing, print reports, end program
 
 def main():
-    '''
-    Inputs the age from the user, conducts input validation, calculates the
-    target heart rate values, and then prints a report.  All of this is done
-    through function calls; no calculations are done in the main function.
+    """
+    Description.
+    
+    action: 
+    input:  
+    output: 
+    return: 
+    """
 
-    action: Calculate target heart rate
-    input:  None
-    output: Display Heart Rate report
-    return: None
-    '''
-
-    age = inputAge()
-    lowTargetHeartRate, highTargetHeartRate = determineTargetHeartRates(age)
-
+    
     # Display Heart Rate report
     print(f'\nAT AGE {age}')
     print(f'Target heart rate is between {lowTargetHeartRate:.0f} and {highTargetHeartRate:.0f}.')
@@ -99,5 +92,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
     main()
